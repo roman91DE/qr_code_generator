@@ -1,4 +1,4 @@
-declare function qrcode(version: number, errorCorrectionLevel: string): QRCode;
+export declare function qrcode(version: number, errorCorrectionLevel: string): QRCode;
 
 interface QRCode {
   addData(data: string): void;
