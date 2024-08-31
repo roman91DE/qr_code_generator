@@ -1,25 +1,37 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
 }
 
 .container {
-    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.qr-generator {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
 }
 
 input, button {
     margin: 10px 0;
     padding: 10px;
     font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -35,4 +47,33 @@ button:hover {
 
 #qr-code {
     margin-top: 20px;
+}
+
+#qr-code img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
